@@ -20,7 +20,7 @@
 <div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
 <div class="layout-container flex h-full grow flex-col">
 <header class="sticky top-4 z-50 mx-auto w-[95%] max-w-7xl rounded-2xl border border-solid border-white/10 glassmorphism mt-4">
-<div class="flex items-center justify-between whitespace-nowrap px-6 py-3">
+<div class="flex items-center justify-between whitespace-nowrap px-4 py-3 md:px-6">
 <div class="flex items-center gap-3 text-white">
 <div class="size-6 text-[var(--primary-color)]">
 <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
@@ -34,13 +34,14 @@
 </div>
 <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Alex's Portfolio</h2>
 </div>
-<div class="hidden md:flex flex-1 justify-center gap-8">
+<nav class="hidden md:flex flex-1 justify-center gap-8">
 <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">About</a>
 <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Projects</a>
 <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Skills</a>
 <a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
-</div>
+</nav>
 <div class="flex items-center gap-2">
+<div class="hidden md:flex items-center gap-2">
 <button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 w-9 bg-transparent hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
 <div class="text-current" data-icon="GithubLogo" data-size="20px" data-weight="regular">
 <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
@@ -63,6 +64,14 @@
 </div>
 </button>
 </div>
+<button class="md:hidden flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 w-9 bg-transparent hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+<svg class="h-6 w-6" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<line x1="3" x2="21" y1="12" y2="12"></line>
+<line x1="3" x2="21" y1="6" y2="6"></line>
+<line x1="3" x2="21" y1="18" y2="18"></line>
+</svg>
+</button>
+</div>
 </div>
 </header>
 <main class="flex flex-1 justify-center px-4 md:px-10 py-5">
@@ -73,7 +82,7 @@
 <div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIOIby4WiCqcB0YSK2qtuc2FWdBFPHc8_3ciejExhzVSGRiMEl0ZoMDKc9C3yTnrnk2gmyXWHQ3L6xCoj_VXNnsAiEbqhgxrzRkMgja1SNJrlTMxPfKxuaNr-vFTrbAllKDlyu7wAF2vDF7o8zkKwBFVmKsroX35YZWOwmU9zR-Wnh87r0LJp2bfSiJ8vAakGF-yzXdPvsAjaboadci_sfhCaCHXsIk69WPwmWYHjmiAPp86YPoWDwHY8LqP2CGifErl8vPgMhwgIi");'></div>
 <div class="absolute inset-0 bg-black/50"></div>
 <div class="relative flex flex-col gap-4 text-center">
-<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] md:text-6xl">
+<h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-[-0.033em]">
                       Alex Bennett
                     </h1>
 <h2 class="text-gray-300 text-lg font-normal leading-normal md:text-xl">
