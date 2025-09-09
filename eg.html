@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
 <link as="style" href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<title>Stitch Design</title>
+<title>Alex's Portfolio</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
@@ -20,16 +20,15 @@
 </style>
 </head>
 <body class="bg-[#111418]">
-<div class="relative flex min-h-screen flex-col font-sans overflow-x-hidden">
+<div class="flex min-h-screen flex-col font-sans overflow-x-hidden">
+
+  <!-- HEADER -->
   <header class="sticky top-4 z-50 mx-auto w-[95%] max-w-7xl rounded-2xl border border-white/10 glassmorphism mt-4">
     <div class="flex items-center justify-between px-4 py-3 md:px-6">
       <!-- Logo -->
       <div class="flex items-center gap-3 text-white">
         <div class="size-6 text-[var(--primary-color)]">
-          <!-- SVG Logo -->
-          <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 0.757L47.243 24 24 47.243 0.757 24 24 0.757ZM21 35.757V12.243L9.243 24 21 35.757Z" fill="currentColor"/>
-          </svg>
+          <svg fill="none" viewBox="0 0 48 48"><path d="M24 0.757L47.243 24 24 47.243 0.757 24 24 0.757ZM21 35.757V12.243L9.243 24 21 35.757Z" fill="currentColor"/></svg>
         </div>
         <h2 class="text-lg font-bold">Alex's Portfolio</h2>
       </div>
@@ -42,21 +41,13 @@
         <a class="text-gray-300 hover:text-white text-sm font-medium" href="#">Contact</a>
       </nav>
 
-      <!-- Right Icons + Mobile Toggle -->
+      <!-- Right + Mobile Toggle -->
       <div class="flex items-center gap-2">
         <div class="hidden md:flex gap-2">
-          <!-- Social Buttons (Github, LinkedIn, Twitter) -->
-          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white">
-            <i class="fa-brands fa-github"></i>
-          </button>
-          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white">
-            <i class="fa-brands fa-linkedin"></i>
-          </button>
-          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white">
-            <i class="fa-brands fa-twitter"></i>
-          </button>
+          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white"><i class="fa-brands fa-github"></i></button>
+          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white"><i class="fa-brands fa-linkedin"></i></button>
+          <button class="h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white"><i class="fa-brands fa-twitter"></i></button>
         </div>
-        <!-- Mobile Hamburger -->
         <button id="menu-toggle" class="md:hidden h-9 w-9 flex items-center justify-center rounded-lg hover:bg-white/10 text-gray-300 hover:text-white">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <line x1="3" y1="6" x2="21" y2="6"/>
@@ -67,7 +58,7 @@
       </div>
     </div>
 
-    <!-- Mobile Nav -->
+    <!-- Mobile Menu -->
     <nav id="mobile-menu" class="hidden flex-col px-4 pb-4 space-y-2 md:hidden">
       <a class="text-gray-300 hover:text-white text-sm font-medium block" href="#">About</a>
       <a class="text-gray-300 hover:text-white text-sm font-medium block" href="#">Projects</a>
@@ -76,14 +67,94 @@
     </nav>
   </header>
 
-  <!-- Rest of your content remains unchanged -->
+  <!-- HERO -->
+  <main class="flex flex-1 justify-center px-4 md:px-10 py-5">
+    <div class="flex flex-col max-w-7xl flex-1">
+      <section class="relative flex min-h-[480px] flex-col items-center justify-center rounded-3xl overflow-hidden text-center">
+        <div class="absolute inset-0 bg-cover bg-center" style='background-image:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1600");'></div>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex flex-col gap-4">
+          <h1 class="text-white text-4xl sm:text-5xl md:text-6xl font-black">Alex Bennett</h1>
+          <h2 class="text-gray-300 text-lg md:text-xl">Web Developer | Creative Technologist</h2>
+          <button class="mt-4 h-12 px-6 rounded-xl bg-[var(--primary-color)] text-white font-bold hover:bg-blue-600 transition">View Projects</button>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="py-12 px-4">
+        <h2 class="text-white text-3xl font-bold pb-6">Featured Projects</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+            <img src="https://images.unsplash.com/photo-1502880195258-4c9af2f2d19b?w=600" class="rounded-lg group-hover:scale-105 transition"/>
+            <div>
+              <p class="text-white text-lg font-semibold">Modern Portfolio Website</p>
+              <p class="text-[#9dabb8] text-sm mt-1">A sleek and responsive portfolio website showcasing my work and skills.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+            <img src="https://images.unsplash.com/photo-1556742400-b5d3d16a3c48?w=600" class="rounded-lg group-hover:scale-105 transition"/>
+            <div>
+              <p class="text-white text-lg font-semibold">E-commerce Platform</p>
+              <p class="text-[#9dabb8] text-sm mt-1">A fully functional e-commerce platform with user authentication and payment integration.</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600" class="rounded-lg group-hover:scale-105 transition"/>
+            <div>
+              <p class="text-white text-lg font-semibold">Interactive Data Visualization</p>
+              <p class="text-[#9dabb8] text-sm mt-1">An interactive web application for visualizing complex data sets.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="py-12 px-4">
+        <h2 class="text-white text-3xl font-bold pb-6">Skills</h2>
+        <div class="flex gap-3 flex-wrap">
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">HTML</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">CSS</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">JavaScript</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">React</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">Node.js</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">Express</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">MongoDB</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">SQL</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">Git</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">Responsive Design</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">UI/UX</span>
+          <span class="px-4 py-2 rounded-lg bg-[#293038] text-white text-sm">Problem Solving</span>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="py-12 px-4 text-center">
+        <h2 class="text-white text-3xl font-bold pb-6">About Me</h2>
+        <p class="text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          I'm a passionate web developer with a focus on creating innovative and user-friendly web experiences. 
+          With a background in computer science and a keen eye for design, I strive to build websites and 
+          applications that are both functional and aesthetically pleasing.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="flex justify-center border-t border-white/10 mt-12">
+    <div class="flex max-w-7xl flex-1 flex-col md:flex-row items-center justify-between px-5 py-10 gap-6">
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#" class="text-[#9dabb8] hover:text-white text-sm">Privacy Policy</a>
+        <a href="#" class="text-[#9dabb8] hover:text-white text-sm">Terms of Service</a>
+      </div>
+      <p class="text-[#9dabb8] text-sm text-center md:text-right">© 2024 Alex Bennett. All rights reserved.</p>
+    </div>
+  </footer>
 </div>
 
-<!-- Script for Mobile Menu -->
+<!-- Mobile Menu Script -->
 <script>
-  document.getElementById("menu-toggle").addEventListener("click", function() {
-    const menu = document.getElementById("mobile-menu");
-    menu.classList.toggle("hidden");
+  document.getElementById("menu-toggle").addEventListener("click", () => {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
   });
 </script>
 </body>
