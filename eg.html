@@ -1,180 +1,209 @@
-<!DOCTYPE html>
-<html lang="en"><head>
+<html><head>
 <meta charset="utf-8"/>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<title>Alex's Portfolio</title>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
-        :root {
-            --primary-color: #1773cf;
-        }
-        .glassmorphism {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-        }
+      :root {
+        --primary-color: #1773cf;
+      }
+      .glassmorphism {
+        background: rgba(17, 20, 24, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      }
     </style>
 </head>
-<body class="bg-[#111a22] text-white" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
-<div class="relative min-h-screen">
-<div class="absolute inset-0 -z-10 bg-gradient-to-br from-[#111a22] via-[#10141a] to-[#0a0f14]"></div>
-<header class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50">
-<nav class="flex items-center justify-between whitespace-nowrap rounded-lg glassmorphism border border-white/10 px-6 py-3">
-<div class="flex items-center gap-3">
-<svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<body class="bg-[#111418]">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-4 z-50 mx-auto w-[95%] max-w-7xl rounded-2xl border border-solid border-white/10 glassmorphism mt-4">
+<div class="flex items-center justify-between whitespace-nowrap px-6 py-3">
+<div class="flex items-center gap-3 text-white">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_6_330)">
 <path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
 </g>
 <defs>
-<clipPath id="clip0_6_330">
-<rect fill="white" height="48" width="48"></rect>
-</clipPath>
+<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
 </defs>
 </svg>
-<h2 class="text-xl font-bold">Alex's Portfolio</h2>
 </div>
-<div class="hidden md:flex items-center gap-6">
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">About</a>
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#projects">Projects</a>
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#certifications">Certifications</a>
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#contact">Contact</a>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Alex's Portfolio</h2>
 </div>
-<div class="flex items-center gap-3">
-<button class="md:hidden p-2 rounded-full hover:bg-white/10 transition-colors">
-<span class="material-symbols-outlined"> menu </span>
+<div class="hidden md:flex flex-1 justify-center gap-8">
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">About</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Projects</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Skills</a>
+<a class="text-gray-300 hover:text-white text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 w-9 bg-transparent hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+<div class="text-current" data-icon="GithubLogo" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
+</svg>
+</div>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 w-9 bg-transparent hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+<div class="text-current" data-icon="LinkedinLogo" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
+</svg>
+</div>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-9 w-9 bg-transparent hover:bg-white/10 text-gray-300 hover:text-white transition-colors">
+<div class="text-current" data-icon="TwitterLogo" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</div>
 </button>
 </div>
-</nav>
-</header>
-<main class="flex flex-col items-center justify-center min-h-screen px-4 py-24">
-<div class="text-center max-w-3xl">
-<h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-tight">
-                    Hi, I'm Alex. A Web Developer.
-                </h1>
-<p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10">
-                    I craft beautiful and functional websites with a focus on user experience. I specialize in front-end development, turning complex problems into elegant, interactive solutions.
-                </p>
-<div class="flex justify-center gap-4">
-<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold hover:opacity-90 transition-opacity" href="#projects">
-<span class="truncate">View My Work</span>
-</a>
-<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-white/10 text-white text-base font-bold hover:bg-white/20 transition-colors" href="#contact">
-<span class="truncate">Get In Touch</span>
-</a>
 </div>
+</header>
+<main class="flex flex-1 justify-center px-4 md:px-10 py-5">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1">
+<div class="@container">
+<div class="p-4 md:p-0">
+<div class="relative flex min-h-[480px] flex-col gap-6 items-center justify-center p-4 rounded-3xl overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIOIby4WiCqcB0YSK2qtuc2FWdBFPHc8_3ciejExhzVSGRiMEl0ZoMDKc9C3yTnrnk2gmyXWHQ3L6xCoj_VXNnsAiEbqhgxrzRkMgja1SNJrlTMxPfKxuaNr-vFTrbAllKDlyu7wAF2vDF7o8zkKwBFVmKsroX35YZWOwmU9zR-Wnh87r0LJp2bfSiJ8vAakGF-yzXdPvsAjaboadci_sfhCaCHXsIk69WPwmWYHjmiAPp86YPoWDwHY8LqP2CGifErl8vPgMhwgIi");'></div>
+<div class="absolute inset-0 bg-black/50"></div>
+<div class="relative flex flex-col gap-4 text-center">
+<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] md:text-6xl">
+                      Alex Bennett
+                    </h1>
+<h2 class="text-gray-300 text-lg font-normal leading-normal md:text-xl">
+                      Web Developer | Creative Technologist
+                    </h2>
+</div>
+<button class="relative flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-blue-600 transition-colors">
+<span class="truncate">View Projects</span>
+</button>
+</div>
+</div>
+</div>
+<section class="py-12 px-4">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] pb-6">Featured Projects</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<img alt="Modern Portfolio Website" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxRh5uDtk8PY9NndESlFxEhpZsEEuHAZ4rtD9yxcRr3oyGQppoRPqlzLayQK5d6vYot0caH4_ADt9uLiwa8PrQl8L2KTh1pmjhbQUx733J_KrihtgVaITQij1mB34Jgf-oInkRMG_d-LKXCrZCVXA5eJLJv0pc3MY5pch9xGD-C2n8oltS5KqAT6btVGu-IQ1xyWgKhEFFHN89ZTm-Q57lGZtTnP1i-27sg4PSsxxI1rNgTGf9QUmknnB45GYyLDcmSSJjdxPLP_JB"/>
+</div>
+<div>
+<p class="text-white text-lg font-semibold leading-normal">Modern Portfolio Website</p>
+<p class="text-[#9dabb8] text-sm font-normal leading-normal mt-1">A sleek and responsive portfolio website showcasing my work and skills.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<img alt="E-commerce Platform" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPbh2zjmMgJxGQUlqt2kvrcAyrXuQ95uc4caPiIGP09Ngry5U0ab2phghFXaak4yhdhC5MHCjO4QpuBCekVpMEwlhJ1QfbcsUNbfoINyEfQdtOV7Z2nmyK0VJLSiYEpaNSd-OzAzhba-Y6gUVa9winSfwdFAa22-l0nJhE204a40g4kKc3C4qQpVECzPCPnsezk5bYWiKTuj8DZGsYJEHaYT-6d6h1Epo3joP1lRSB5bQNifI2t5nrZiDaCdVEwoPdmVNt5ehW8_Hb"/>
+</div>
+<div>
+<p class="text-white text-lg font-semibold leading-normal">E-commerce Platform</p>
+<p class="text-[#9dabb8] text-sm font-normal leading-normal mt-1">A fully functional e-commerce platform with user authentication and payment integration.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-[#1a1e24] p-4 group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden">
+<img alt="Interactive Data Visualization" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA13z_tKojoWOqbZqfe4M28TjKICrAkb4v95hwvbX044wfL2hyBXQT0pJot3MPSWFQJ3Z_zliORtrR91NnPdNdULcg8aifxHeHcgbP2Z0Uu_roTGPbqen4jFtuUkf5F1T16pulK2SKy6L9ESJBXM_ksc6xlOAc3Z6vRyeiuvnNC-kXI7gZVbot4J3tTdTiSaHIM7fEiq0nXyX47mTYl72zzDl0p9UmS1F7V5mDzf2dvVf9OQ_DVCs3W7ClVefb-vQF47cihQSIuKQZs"/>
+</div>
+<div>
+<p class="text-white text-lg font-semibold leading-normal">Interactive Data Visualization</p>
+<p class="text-[#9dabb8] text-sm font-normal leading-normal mt-1">An interactive web application for visualizing complex data sets.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 px-4">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] pb-6">Skills</h2>
+<div class="flex gap-3 flex-wrap">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">HTML</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">CSS</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">JavaScript</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">React</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">Node.js</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">Express</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">MongoDB</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">SQL</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">Git</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">Responsive Design</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">UI/UX</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#293038] px-4">
+<p class="text-white text-sm font-medium leading-normal">Problem Solving</p>
+</div>
+</div>
+</section>
+<section class="py-12 px-4">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] pb-6">About Me</h2>
+<p class="text-gray-300 text-base font-normal leading-relaxed max-w-3xl">
+                I'm a passionate web developer with a focus on creating innovative and user-friendly web experiences. With a background in computer science and a keen eye for design,
+                I strive to build websites and applications that are both functional and aesthetically pleasing. I'm always eager to learn new technologies and collaborate on
+                exciting projects.
+              </p>
+</section>
 </div>
 </main>
-<section class="w-full max-w-7xl mx-auto py-16 md:py-24 px-4" id="projects">
-<div class="text-center mb-12">
-<h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Featured Projects</h2>
-<p class="text-lg text-white/70 mt-4 max-w-2xl mx-auto">Here's a selection of my work. See something you like? Let's talk.</p>
+<footer class="flex justify-center border-t border-white/10 mt-12">
+<div class="flex max-w-7xl flex-1 flex-col px-5 py-10">
+<div class="flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4">
+<a class="text-[#9dabb8] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">Privacy Policy</a>
+<a class="text-[#9dabb8] hover:text-white text-sm font-normal leading-normal transition-colors" href="#">Terms of Service</a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex flex-col group">
-<h3 class="text-2xl font-bold mb-3">E-commerce Platform</h3>
-<p class="text-white/70 mb-6 flex-grow">A full-featured online store with a custom CMS, product variations, and secure payments.</p>
-<a class="flex items-center gap-2 text-[var(--primary-color)] font-medium group-hover:underline" href="#">
-<span>View Details</span>
-<span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform">
-                            arrow_forward
-                        </span>
-</a>
-</div>
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex flex-col group">
-<h3 class="text-2xl font-bold mb-3">Interactive Data Dashboard</h3>
-<p class="text-white/70 mb-6 flex-grow">A web application for visualizing complex datasets with dynamic charts and filters.</p>
-<a class="flex items-center gap-2 text-[var(--primary-color)] font-medium group-hover:underline" href="#">
-<span>View Details</span>
-<span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform">
-                            arrow_forward
-                        </span>
-</a>
-</div>
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex flex-col group">
-<h3 class="text-2xl font-bold mb-3">Company Portfolio Website</h3>
-<p class="text-white/70 mb-6 flex-grow">A sleek and modern website to showcase company services and projects, built with performance in mind.</p>
-<a class="flex items-center gap-2 text-[var(--primary-color)] font-medium group-hover:underline" href="#">
-<span>View Details</span>
-<span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform">
-                            arrow_forward
-                        </span>
-</a>
-</div>
-</div>
-</section>
-<section class="w-full max-w-7xl mx-auto py-16 md:py-24 px-4" id="certifications">
-<div class="text-center mb-12">
-<h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Certifications</h2>
-<p class="text-lg text-white/70 mt-4 max-w-2xl mx-auto">A testament to my commitment to continuous learning and professional development.</p>
-</div>
-<div class="max-w-4xl mx-auto space-y-8">
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex items-start sm:items-center justify-between flex-col sm:flex-row gap-4">
-<div class="flex-grow">
-<h3 class="text-xl font-bold">Certified JavaScript Developer</h3>
-<p class="text-white/70 mt-1">Issued by Tech Certification Institute</p>
-</div>
-<p class="text-white/50 text-sm whitespace-nowrap">Completed: March 2023</p>
-</div>
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex items-start sm:items-center justify-between flex-col sm:flex-row gap-4">
-<div class="flex-grow">
-<h3 class="text-xl font-bold">Advanced CSS and Sass</h3>
-<p class="text-white/70 mt-1">Issued by Web Design Masters</p>
-</div>
-<p class="text-white/50 text-sm whitespace-nowrap">Completed: August 2022</p>
-</div>
-<div class="glassmorphism border border-white/10 rounded-lg p-6 flex items-start sm:items-center justify-between flex-col sm:flex-row gap-4">
-<div class="flex-grow">
-<h3 class="text-xl font-bold">Responsive Web Design</h3>
-<p class="text-white/70 mt-1">Issued by Code Academy Pro</p>
-</div>
-<p class="text-white/50 text-sm whitespace-nowrap">Completed: January 2022</p>
-</div>
-</div>
-</section>
-<section class="w-full max-w-7xl mx-auto py-16 md:py-24 px-4" id="contact">
-<div class="text-center mb-12">
-<h2 class="text-4xl md:text-5xl font-bold tracking-tighter">Get In Touch</h2>
-<p class="text-lg text-white/70 mt-4 max-w-2xl mx-auto">Have a project in mind or just want to say hi? Feel free to reach out.</p>
-</div>
-<div class="max-w-4xl mx-auto">
-<div class="glassmorphism border border-white/10 rounded-lg p-8 md:p-12">
-<form class="space-y-6">
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-<input class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition-all" placeholder="Your Name" type="text"/>
-<input class="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition-all" placeholder="Your Email" type="email"/>
-</div>
-<input class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition-all" placeholder="Subject" type="text"/>
-<textarea class="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white placeholder-white/50 focus:ring-2 focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition-all" placeholder="Your Message" rows="5"></textarea>
-<button class="w-full flex items-center justify-center rounded-lg h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold hover:opacity-90 transition-opacity" type="submit">
-                            Send Message
-                        </button>
-</form>
-</div>
-<div class="text-center mt-12">
-<p class="text-lg text-white/70 mb-4">Or connect with me on social media:</p>
-<div class="flex justify-center items-center gap-6 mb-6">
-<a class="text-white/70 hover:text-[var(--primary-color)] transition-colors" href="#">
-<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M19 0H5C2.239 0 0 2.239 0 5V19C0 21.761 2.239 24 5 24H19C21.762 24 24 21.761 24 19V5C24 2.239 21.762 0 19 0ZM8 19H5V8H8V19ZM6.5 6.732C5.534 6.732 4.75 5.942 4.75 4.968C4.75 3.994 5.534 3.204 6.5 3.204C7.466 3.204 8.25 3.994 8.25 4.968C8.25 5.942 7.467 6.732 6.5 6.732ZM20 19H17V13.396C17 10.028 13 9.789 13 13.396V19H10V8H13V9.765C13.621 8.687 15.064 8 16.738 8C19.471 8 20 10.322 20 12.926V19Z"></path>
+<div class="flex justify-center gap-4">
+<a class="text-[#9dabb8] hover:text-white transition-colors" href="#">
+<div data-icon="GithubLogo" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
 </svg>
+</div>
 </a>
-<a class="text-white/70 hover:text-[var(--primary-color)] transition-colors" href="#">
-<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 0C5.374 0 0 5.373 0 12C0 17.203 3.438 21.598 8.207 23.287C8.805 23.399 9.043 23.012 9.043 22.686C9.043 22.392 9.031 21.439 9.028 20.254C5.642 20.973 4.945 18.618 4.945 18.618C4.413 17.26 3.63 16.892 3.63 16.892C2.553 16.148 3.712 16.166 3.712 16.166C4.894 16.248 5.48 17.348 5.48 17.348C6.541 19.168 8.282 18.632 8.941 18.324C9.049 17.55 9.355 17.012 9.68 16.719C7.054 16.425 4.316 15.421 4.316 11.161C4.316 9.873 4.792 8.841 5.578 8.016C5.47 7.747 5.092 6.722 5.679 5.253C5.679 5.253 6.699 4.935 9.022 6.438C9.99 6.175 11.008 6.046 12.016 6.042C13.023 6.046 14.042 6.175 15.01 6.438C17.332 4.935 18.352 5.253 18.352 5.253C18.939 6.722 18.561 7.747 18.452 8.016C19.24 8.841 19.714 9.873 19.714 11.161C19.714 15.433 16.973 16.422 14.338 16.711C14.731 17.067 15.101 17.818 15.101 18.991C15.101 20.683 15.088 22.029 15.088 22.686C15.088 23.016 15.322 23.404 15.926 23.284C20.565 21.595 24 17.202 24 12C24 5.373 18.627 0 12 0Z"></path>
+<a class="text-[#9dabb8] hover:text-white transition-colors" href="#">
+<div data-icon="LinkedinLogo" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
 </svg>
+</div>
+</a>
+<a class="text-[#9dabb8] hover:text-white transition-colors" href="#">
+<div data-icon="TwitterLogo" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</div>
 </a>
 </div>
-<a class="flex items-center justify-center gap-2 text-lg text-white/70 hover:text-[var(--primary-color)] transition-colors" href="mailto:alex.dev@email.com">
-<span class="material-symbols-outlined">
-                            email
-                        </span>
-<span>alex.dev@email.com</span>
-</a>
+<p class="text-[#9dabb8] text-sm font-normal leading-normal text-center md:text-right">© 2024 Alex Bennett. All rights reserved.</p>
 </div>
 </div>
-</section>
+</footer>
 </div>
+</div>
+
 </body></html>
